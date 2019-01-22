@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Mozanta" />
+    <meta name="generator" content="afg v0.1" />
+    <title>Alfuttaim Order Detail</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/floating-labels.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom styles for this template -->
+  </head>
+  <body>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <div id="wrapper" class="animate">
+      <span class="span"
+        ><a href="orderSearch.html"
+          ><i class="fas fa-long-arrow-alt-left"></i> Back</a
+        ></span
+      >
+      <nav class="navbar header-top fixed-top navbar-expand-lg navbar-dark ">
+        <a href="index.html" class="logo"
+          ><span class="sr-only">Al Futtaim</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="svg2"
+            version="1.1"
+            xml:space="preserve"
+            width="206.52362"
+            height="44"
+            viewBox="0 0 206.52362 44"
+          >
+            <g
+              id="g10"
+              transform="matrix(1.25,0,0,-1.25,-3.7533875e-4,43.999875)"
+            >
+              <path
+                d="m 137.55816,21.780647 5.03035,0 0,3.344818 -5.03035,0 0,-3.344818 z m -55.369723,3.344818 0,-20.1165547 5.028275,0 0,10.0586227 3.369677,0 0,-6.7138044 1.684838,-3.3448183 11.744843,0 0,10.0586227 2.51276,0 0,-10.0586227 5.02965,0 0,10.0586227 2.51414,0 0,-10.0586227 5.02758,0 0,10.0586227 2.5169,0 0,3.344128 -2.5169,0 0,3.368986 -5.02758,0 0,-3.368986 -2.51414,0 0,3.368986 -5.02965,0 0,-3.368986 -7.568657,0 0,-10.0579324 -3.344128,0 0,10.0579324 -8.399333,0 0,3.368986 8.399333,0 0,3.344818 -13.427608,0 z m -13.40206,-20.1165547 5.028966,0 0,20.1165547 -5.028966,0 0,-20.1165547 z M 57.041535,25.125465 50.329112,5.0089103 l 5.028275,0 2.514829,6.6896367 3.368986,0 0,-6.6896367 5.029656,0 0,20.1165547 -9.229323,0 z m 4.199667,-3.344818 0,-6.713114 -2.538996,0 2.538996,6.713114 z m 76.316958,-16.7717367 5.03035,0 0,13.4027507 -5.03035,0.02417 0,-13.4269177 z m 7.54379,13.4027507 0,-13.4027507 5.03104,0 0,10.0586227 2.51414,0 0,-10.0586227 5.02689,0 0,10.0586227 2.51552,0 0,-10.0586227 5.02966,0 0,10.0586227 -1.6586,3.344128 -18.45865,0 z m -21.80208,0 -1.68277,-3.344128 0,-6.7138044 1.68277,-3.3448183 11.74484,0 0,13.4027507 -11.74484,0 z m 3.34482,-3.344128 3.36899,0 0,-6.7144949 -3.36899,0 0,6.7144949 z m -51.145199,-3.344818 5.028966,0 0,3.371057 -5.028966,0 0,-3.371057 z"
+                style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                id="logo-a"
+              ></path>
+              <g
+                id="g14"
+                transform="matrix(0.69050748,0,0,0.69050748,20.145856,35.1999)"
+              >
+                <path
+                  d="m 0,0 -29.175,-29.112 7.296,-7.283 7.326,7.258 7.264,-7.289 -7.311,-7.316 7.311,-7.235 7.146,7.254 7.445,-7.254 7.249,7.254 -7.249,7.25 7.327,7.336 7.25,-7.258 7.265,7.258 L 0,0 Z M -7.25,-21.839 0,-14.582 7.248,-21.839 0,-29.095 l -7.25,7.256 z"
+                  style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                  id="path16"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-md-auto d-md-flex">
+            <!--<li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user"></i> Profile</a>
+          </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-user"></i> Welcome, Ronald</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store Name</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown10">
+
+                  <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="linksSet">
+            <span class="linkss1">
+              <a href="#"><i class="fas fa-print"></i> Print</a></span
+            >
+            <span class="linkss2">
+              <a href="#"><i class="fas fa-envelope"></i> Email</a></span
+            >
+          </div>
+        </div>
+
+        <!--Order Number Section-->
+        <div class="row">
+          <div class="col mb-2">
+            <div class="card mb10">
+              <div class="card-body col-md-5" style="width: auto;float: left;">
+                <h4 class="card-title">Order Detail</h4>
+              </div>
+            </div>
+
+<div class="row">
+          <div class="linksSet">
+            <span class="linkss3">
+              <button id="SubmitBtn" class="btn btn-primary btn-lg btn-block fr" type="submit" data-toggle="modal" data-target="#exampleModal1">
+                      Staging Location
+              </button>
+              </span>
+            <span class="linkss4">
+              <button id="SubmitBtn" class="btn btn-primary btn-lg btn-block fr" type="submit" data-toggle="modal" data-target="#exampleModal2">
+                      Ready For Collection
+              </button>
+             </span>
+          </div>
+        </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h6 class="primClr">ORDER NUMBER: DEV1051034</h6>
+
+                <div class="row">
+                  <div class="col-md-3 mb-3">
+                    <label class="bold">Order Date</label>
+                    <label for="orderDate">13/12/2018</label>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label class="bold">Last Updated</label>
+                    <label for="orderDate">13/12/2018</label>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label class="bold">Order Status</label>
+                    <label for="orderTotal">new</label>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label class="bold">Customer Name</label>
+                    <label for="custName">Arjun Raj</label>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label class="bold">Brand</label>
+                    <label for="brand">KIABI UAE</label>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label class="bold">Originator Logon ID</label>
+                    <label for="status">arjun.raj@gmail.com</label>
+                  </div>
+                </div>
+
+                <!--<hr class="mb-4 singleBdr">-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Result1" class="row">
+          <div class="col">
+            <div class="card drkbdr">
+              <div class="card-body table-responsive">
+                <h5 class="card-title">Order Lines</h5>
+                <hr class="mb-3" />
+                <table class="  table table-striped custab">
+                  <thead>
+                    <tr>
+                      <th scope="col">SKU</th>
+                      <th scope="col">Product</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Requested Ship Date</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Discount</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Plain Jersey T- Shirt</td>
+                      <td>2</td>
+                      <td>250</td>
+                      <td>11/13/2018</td>
+                      <td>Included In Shipment</td>
+                      <td>0</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Printed Maroon jacket</td>
+                      <td>2</td>
+                      <td>250</td>
+                      <td>11/13/2018</td>
+                      <td>Included In Shipment</td>
+                      <td>0</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Lenin Hand Made rounded color Kurthas</td>
+                      <td>2</td>
+                      <td>250</td>
+                      <td>11/13/2018</td>
+                      <td>Included In Shipment</td>
+                      <td>0</td>
+                      <td>500</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="col-md-6 invoiceBlock">
+                  <div class="row">
+                    <h6 class="col-md-12">Invoice</h6>
+                    <div class="col-md-12">
+                      <p>Order Level Discount <span>1500.00</span></p>
+                      <p>Minus Adjustment<span>0.00</span></p>
+                      <p>COD Charges<span>0.00</span></p>
+                      <p>Original Shipping<span>0.00</span></p>
+                      <p>Shipping Adjustment<span>0.00</span></p>
+                      <p>Total Shipping Charges<span>0.00</span></p>
+                      <p>Tax<span>0.00</span></p>
+                      <p>Coupons<span>0.00</span></p>
+                      <p>
+                        <strong>Order Total</strong
+                        ><span><strong>1500.00</strong> </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Result1" class="row">
+          <div class="col">
+            <div class="card drkbdr">
+              <h5 class="card-title margiNfitHead">
+                Shipping Information
+                <span
+                  class="spanImg"
+                  data-toggle="collapse"
+                  data-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  ><img src="images/add.png"
+                /></span>
+              </h5>
+              <div class="card-body table-responsive" style="padding-top:0px;">
+                <div class="collapse" id="collapseExample">
+                  <table class="  table table-striped custab">
+                    <thead>
+                      <tr>
+                        <th scope="col">SKU</th>
+                        <th scope="col">Products</th>
+                        <th scope="col col-md-1">Invoice</th>
+                        <th scope="col">Requested Ship Date</th>
+                        <th scope="col">Shipment Tracking ID</th>
+                        <th scope="col">Shipping Method</th>
+                        <th scope="col">Shipping Address</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>
+                          <table
+                            class="table custab"
+                            style=" background-color: #eee;"
+                          >
+                            <tr>
+                              <td>Printed Maroon jacket</td>
+                            </tr>
+                            <tr>
+                              <td>Plain Jersey T- Shirt</td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td>
+                          <a href="js/OrderInvoice.pdf" download target="_blank"
+                            ><span class="spanImg"
+                              ><img src="images/invoice.png"/></span
+                          ></a>
+                        </td>
+                        <td>11/13/2018</td>
+                        <td>2</td>
+                        <td>COD</td>
+                        <td>
+                          <h6>Mr Arun Raj</h6>
+                          <p>TC-18/634</p>
+                          <p>Gunjan Steet, Thiruvalla</p>
+                          <p>Near Post office,Kottayam</p>
+                          <p>India</p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Printed Maroon jacket</td>
+                        <td>
+                          <a href="js/OrderInvoice.pdf" download target="_blank"
+                            ><span class="spanImg"
+                              ><img src="images/invoice.png"/></span
+                          ></a>
+                        </td>
+                        <td>11/13/2018</td>
+                        <td>2</td>
+                        <td>COD</td>
+                        <td>
+                          <h6>Mr Arun Raj</h6>
+                          <p>TC-18/634</p>
+                          <p>Gunjan Steet, Thiruvalla</p>
+                          <p>Near Post office,Kottayam</p>
+                          <p>India</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Lenin Hand Made rounded color Kurthas</td>
+                        <td>
+                          <a href="js/OrderInvoice.pdf" download target="_blank"
+                            ><span class="spanImg"
+                              ><img src="images/invoice.png"/></span
+                          ></a>
+                        </td>
+                        <td>11/13/2018</td>
+                        <td>2</td>
+                        <td>COD</td>
+                        <td>
+                          <h6>Mr Arun Raj</h6>
+                          <p>TC-18/634</p>
+                          <p>Gunjan Steet, Thiruvalla</p>
+                          <p>Near Post office,Kottayam</p>
+                          <p>India</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Result1" class="row">
+          <div class="col">
+            <div class="card drkbdr">
+              <h5 class="card-title margiNfitHead">
+                Payment Information
+                <span
+                  class="spanImg"
+                  data-toggle="collapse"
+                  data-target="#collapseExample2"
+                  aria-expanded="false"
+                  aria-controls="collapseExample2"
+                  ><img src="images/add.png"
+                /></span>
+              </h5>
+              <div class="collapse" id="collapseExample2">
+                <div class="card-body table-responsive">
+                  <hr class="mb-3" />
+                  <table class="  table table-striped custab">
+                    <thead>
+                      <tr>
+                        <th scope="col">Payment Status</th>
+                        <th scope="col">Payment Method</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Account</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Plain Jersey T- Shirt</td>
+                        <td>250</td>
+                        <td>20123</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="col-md-12">
+                  <!--Billing Address Section-->
+                  <div class="row mb50">
+                    <div class="col col-md-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="primClr">Billing Address</h5>
+
+                          <div class="row">
+                            <div class="col">
+                              <h6>Mr Arun Raj</h6>
+                              <p>TC-18/634</p>
+                              <p>Gunjan Steet, Thiruvalla</p>
+                              <p>Near Post office,Kottayam</p>
+                              <p>India</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Notes-->
+
+                <!-- <div class="col col-md-8">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="primClr">Notes</h5>
+                <form class="needs-validation" novalidate="">
+                  <div class="row">
+                    <div class="col">
+                      <label class="bold">Type Notes</label>
+                      <textarea
+                        class="form-control rounded-0"
+                        id=""
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <hr class="mb-3" />
+                  <div class="col-md-3 mb-2 fr " style="padding-right: 0 ">
+                    <button
+                      id="SubmitBtn"
+                      onclick="window.location.href='orderSearch2.html'"
+                      class="btn btn-primary btn-lg btn-block fr"
+                      type="submit"
+                    >
+                      Update Notes
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>-->
+
+                <!--Notes-->
+              </div>
+              <!--Billing Address Section-->
+            </div>
+          </div>
+        </div>
+
+        <!--Return Orders-->
+
+        <div id="Result1" class="row">
+          <div class="col">
+            <div class="card drkbdr">
+              <h5 class="card-title margiNfitHead">
+                Return Orders
+                <span
+                  class="spanImg"
+                  data-toggle="collapse"
+                  data-target="#collapseExample3"
+                  aria-expanded="false"
+                  aria-controls="collapseExample3"
+                  ><img src="images/add.png"
+                /></span>
+              </h5>
+              <div class="card-body table-responsive" style="padding-top:0px;">
+                <div class="collapse" id="collapseExample3">
+                  <table class="  table table-striped custab">
+                    <thead>
+                      <tr>
+                        <th scope="col">SKU</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Invoice</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Discount</th>
+                        <th scope="col">Refund Total</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Lenin Hand Made rounded color Kurthas</td>
+                        <td>2</td>
+                        <td>250</td>
+                        <td>
+                          <a
+                            href="js/OrderReturnInvoice.pdf"
+                            download
+                            target="_blank"
+                            ><span class="spanImg"
+                              ><img src="images/invoice.png"/></span
+                          ></a>
+                        </td>
+                        <td>Approved</td>
+                        <td>0</td>
+                        <td>500</td>
+                        <td>
+                          <span
+                            class="spanImg"
+                            data-toggle="collapse"
+                            data-target="#collapseReturnOrders"
+                            aria-expanded="false"
+                            aria-controls="collapseReturnOrders"
+                            ><i class="fas fa-angle-down"></i
+                          ></span>
+                        </td>
+                      </tr>
+                      <tr class="collapse" id="collapseReturnOrders">
+                        <td colspan="9">
+                          <div class="row my-2">
+                            <div class="col-md-3">
+                              <b>Order Date:</b> Friday, 21 Dec 2018
+                            </div>
+                            <div class="col-md-3">
+                              <b>Credit Note:</b> 201186089479341778
+                            </div>
+                            <div class="col-md-3">
+                              <b>Credit Note Date:</b> Saturday, 29 Dec 2018
+                            </div>
+                            <div class="col-md-3">
+                              <b>Billing Address:</b>
+                              <p>
+                                Jumeirah Village Triangle E1 Villa E1 District 4
+                                Dubai , UNITED ARAB EMIRATES
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- <div class="returntotal">
+                    <div class="returntext">Total Return Orders</div>
+                    <div class="returnNumber">
+                      <a
+                        href="js/OrderReturnInvoice.pdf"
+                        download
+                        target="_blank"
+                        >5</a
+                      >
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Return Orders-->
+
+        <!-- <div class="col-md-1 mt-2 mb-2 fr " style="padding-right: 0 ">
+          <button id="SubmitBtn" onclick="window.location.href='orderSearch.html'" class="btn btn-primary btn-lg btn-block fr"type="submit">Ok</button>
+        </div> -->
+        <!--<div class="col-md-2 mt-2 mb-2 fr " style="padding-right: 0 ">
+          <button id="SubmitBtn" class="bgc-gray white btn-default btn-lg btn-block fr"type="submit">Return Orders</button>
+        </div>-->
+      </div>
+
+
+
+      <!-- Modal width cancel and okay -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--<h5 class="modal-title" id="exampleModalLabel">Dead Center Modal</h5>-->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group">
+        <label for="comment"></label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal width cancel and okay -->
+
+
+<!-- Modal width cancel and okay -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--<h5 class="modal-title" id="exampleModalLabel">Dead Center Modal</h5>-->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group">
+        <label for="comment"></label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal width cancel and okay -->
+
+
+    </div>
+    <!--PDF CONTENT-->
+
+    <!--PDF CONTENT-->
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+
+    <!--scripts only-->
+    <script src="vendor/jquery-3.3.1.slim.min.js"></script>
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/form-validation.js"></script>
+
+    <script>
+      $(document).ready(function () {
+      $('.leftmenutrigger').on('click', function (e) {
+        $('.side-nav').toggleClass("open");
+        $('#wrapper').toggleClass("open");
+        e.preventDefault();
+      });
+       $('#printInvoice').click(function(){
+            Popup($('.invoice')[0].outerHTML);
+            function Popup(data)
+            {
+                window.print();
+                return true;
+            }
+        });
+    </script>
+  </body>
+</html>
